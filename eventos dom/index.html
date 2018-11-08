@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>	Eventos </title>
+	<link rel="stylesheet" type="text/css" href="estlos.css">
+</head>
+<body>
+
+	<!-- <button onclick="saludo()">saludo</button> -->
+	<!--<button id="btn-saludar">Saludo</button>-->
+	<button id="btn-caja">Crear Caja</button>
+	<section id="contenedor"></section>
+		<script>
+
+			function crearCaja(){
+				var contenedor = document.getElementById("contenedor");
+				var caja = document.createElement("div");
+				caja.className = "caja";
+				contenedor.appendChild(caja);
+			}
+
+			var btnCaja = document.getElementById("btn-caja");
+			btnCaja.addEventListener("click", crearCaja);
+
+
+
+/*	function saludo() {
+			alert("Hola");
+		}
+
+
+
+		var btnSaludar = document.getElementById("btn-saludar");
+			btnSaludar.addEventListener("click", saludo);
+			-->
+*/
+		</script>
+</body>
+</html>
